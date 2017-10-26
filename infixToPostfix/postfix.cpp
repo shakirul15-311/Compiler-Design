@@ -4,7 +4,7 @@
 using namespace std;
 
 
-// Simply determine if character is one of the four standard operators.
+// determine if character is one of the four standard operators
 bool isOperator(char character) {
     if (character == '+' || character == '-' || character == '*' || character == '/') {
         return true;
@@ -13,7 +13,7 @@ bool isOperator(char character) {
 }
 
 
-// If the character is not an operator or a parenthesis, then it is assumed to be an operand.
+// chq character is not an operator or a parenthesis, then it is assumed to be an operand.
 bool isOperand(char character) {
     if (!isOperator(character) && character != '(' && character != ')') {
         return true;
